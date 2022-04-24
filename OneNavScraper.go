@@ -27,6 +27,7 @@ func main() {
 		if ok {
 			name := strings.TrimSpace(s.Find(".name").Text())
 			desc := strings.TrimSpace(s.Find(".desc").Text())
+			file.WriteString("\n\n")
 			file.WriteString("链接：" + dataUrl + "\n\n")
 			file.WriteString("名称：" + name + "\n\n")
 			file.WriteString("描述：" + desc + "\n\n")
